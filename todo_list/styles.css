@@ -1,0 +1,394 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 120vh;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: 0.3s ease-in-out;
+}
+
+body.dark-mode {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.dark-mode .task-container,
+.dark-mode .completed-task-container {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+.dark-mode .sidebar {
+    background-color: #121212;
+}
+
+.dark-mode .task-list .task {
+    background-color: #252525;
+}
+
+.dark-mode .btn {
+    border: none;
+}
+
+.dark-mode .btn-edit {
+    background-color: #ffaa00;
+}
+
+.dark-mode .btn-complete {
+    background-color: #28a745;
+}
+
+.dark-mode .btn-delete {
+    background-color: #dc3545;
+}
+
+.dark-mode .search-bar::placeholder {
+    color: gray;
+}
+
+.sidebar {
+    width: 270px;
+    background: #003580;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.sidebar-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.portfolio_section{
+    margin-top: 200px;
+}
+
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 0%;
+    width: min-content;
+}
+
+.menu-item {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #ff8c00;
+    color: #ffffff;
+}
+
+.logout-item {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.logout-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.logout-item a:hover {
+    background-color: #ff1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .logout-item a {
+    color: white;
+    background-color: #333;
+    border: 2px solid white;
+}
+
+.dark-mode .logout-item a:hover {
+    background-color: #ff1a1a;
+    color: #ffffff;
+}
+
+
+.dark-mode .menu-item a {
+    color: white;
+    background-color: #333;
+    border: 2px solid white;
+}
+
+.dark-mode .menu-item a:hover {
+    background-color: #ff8c00;
+    color: black;
+}
+
+.main-content {
+    margin-left: 320px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+h2 {
+    color: black;
+}
+
+.dark-mode h2 {
+    color: white !important;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-btn {
+    padding: 10px 15px;
+    background-color: #003580;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #002a67;
+}
+
+.task-container {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.complete-btn {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.complete-btn:hover {
+    background: #218838;
+}
+
+.task-container.completed {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dark-mode .task-container.completed {
+    background-color: #252525;
+    color: white;
+}
+
+.edit-btn {
+    background: #FFD700;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background: rgb(247, 221, 77);
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.delete-btn:hover {
+    background: #ff1a1a;
+
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+
+.completed-tasks .task-container {
+    background-color: #f0f0f0;
+    border-left: 5px solid green;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.task-container.completed span {
+    text-decoration: line-through; 
+    color: gray;
+}
+
+
+.edit-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h2 {
+    color: #003580;
+    margin-bottom: 15px;
+}
+
+.edit-container input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.update-btn {
+    background: #003580;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background: #002a67;
+}
+
+
+.cancel-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background: #ccc;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background: #b0b0b0;
+}
+
+
+#darkModeToggle {
+    height: 40px;
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#darkModeToggle:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+#darkModeToggle:active {
+    transform: scale(0.95);
+}
+
+
+body.dark-mode #darkModeToggle {
+    background: #333;
+    color: white;
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background: #555;
+}
